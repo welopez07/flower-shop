@@ -1,0 +1,18 @@
+<!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+  <!-- Página de inicio -->
+  <welcome-file-list>
+    <welcome-file>addFlower.jsp</welcome-file> <!-- Aquí defines la página inicial -->
+  </welcome-file-list>
+
+  <!-- Configuración del servlet -->
+  <servlet>
+    <servlet-name>AddFlowerServlet</servlet-name>
+    <servlet-class>com.flowershop.servlet.AddFlowerServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>AddFlowerServlet</servlet-name>
+    <url-pattern>/addFlower</url-pattern>
+  </servlet-mapping>
+</web-app>
